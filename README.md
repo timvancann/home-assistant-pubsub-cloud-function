@@ -11,7 +11,10 @@ The cloud function will write each event to a [Google BigQuery](https://console.
 4. Use this command to deploy the Cloud Function
 ```bash
 gcloud functions deploy hass_to_bigquery --runtime python37 --trigger-topic topic-name
-```
+``` 
 Replace `topic-name` with the topic name you use in Home Assistant to publish to Pub/Sub
 
-That's it! Your events should start appearing in BigQuery.
+You can verify your subscription to the topic here: https://console.cloud.google.com/cloudpubsub/subscriptions
+
+That's it! Your events should start appearing in BigQuery. 
+
