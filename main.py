@@ -13,7 +13,7 @@ table_ref = dataset.table(TABLE)
 table = bigquery_client.get_table(table_ref)
 
 
-def hello_pubsub(data, context):
+def hass_to_bigquery(data, context):
 
     if 'data' in data:
         state = json.loads(
